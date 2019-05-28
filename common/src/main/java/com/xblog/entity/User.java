@@ -1,8 +1,9 @@
 package com.xblog.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import java.time.LocalDateTime;
+
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * <p>
@@ -25,9 +26,9 @@ public class User implements Serializable {
 
     private String fPass;
 
-    private LocalDateTime fCreateTime;
+    private Date fCreateTime;
 
-    private LocalDateTime fUpdateTime;
+    private Date fUpdateTime;
 
     private String fMobile;
 
@@ -70,19 +71,19 @@ public class User implements Serializable {
         this.fPass = fPass;
     }
 
-    public LocalDateTime getfCreateTime() {
+    public Date getfCreateTime() {
         return fCreateTime;
     }
 
-    public void setfCreateTime(LocalDateTime fCreateTime) {
+    public void setfCreateTime(Date fCreateTime) {
         this.fCreateTime = fCreateTime;
     }
 
-    public LocalDateTime getfUpdateTime() {
+    public Date getfUpdateTime() {
         return fUpdateTime;
     }
 
-    public void setfUpdateTime(LocalDateTime fUpdateTime) {
+    public void setfUpdateTime(Date fUpdateTime) {
         this.fUpdateTime = fUpdateTime;
     }
 

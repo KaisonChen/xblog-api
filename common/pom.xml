@@ -6,7 +6,6 @@
 		<groupId>com.xblog</groupId>
 		<artifactId>xblog-api</artifactId>
 		<version>0.0.1</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.xblog</groupId>
 	<artifactId>common</artifactId>
@@ -86,8 +85,9 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-			<version>1.2.47</version>
+			<version>1.2.50</version>
 		</dependency>
+
 
 	</dependencies>
 

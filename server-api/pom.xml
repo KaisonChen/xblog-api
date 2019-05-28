@@ -6,7 +6,6 @@
 		<groupId>com.xblog</groupId>
 		<artifactId>xblog-api</artifactId>
 		<version>0.0.1</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.xblog</groupId>
 	<artifactId>server-api</artifactId>
@@ -50,6 +49,8 @@
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>1.3.0</version>
 		</dependency>
+
+
 	</dependencies>
 
 	<build>
