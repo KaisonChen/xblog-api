@@ -16,8 +16,7 @@ public class MyNullJsonSerializer extends JsonSerializer {
     @Override
     public void serialize(Object value, JsonGenerator jgen, SerializerProvider provider) throws IOException {
         if (value == null) {
-            jgen.writeStartArray();
-            jgen.writeEndArray();
+            jgen.writeString("");
         }
     }
 }

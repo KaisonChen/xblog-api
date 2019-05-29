@@ -50,6 +50,7 @@ public class UserController {
             infoVo.setMobile(user.getfMobile());
             infoVo.setEmail(user.getfEmail());
             infoVo.setAvatar(user.getfAvatar());
+            infoVo.setCreateTime(user.getfCreateTime());
             return new ApiResult(ApiCode.SUCCESS,"success",infoVo);
         }catch (Exception e){
             logger.error("UserController error:" + e.getMessage(),e);

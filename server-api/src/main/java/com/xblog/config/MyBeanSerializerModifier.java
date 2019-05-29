@@ -37,7 +37,7 @@ public class MyBeanSerializerModifier extends BeanSerializerModifier {
             if (isArrayType(writer)) {
                 //给writer注册一个自己的nullSerializer
                 writer.assignNullSerializer(this.nullArrayJsonSerializer);
-            } else {
+            } else if(isStringType(writer)){
                 writer.assignNullSerializer(this.nullJsonSerializer);
             }
         }
@@ -48,6 +48,11 @@ public class MyBeanSerializerModifier extends BeanSerializerModifier {
     protected boolean isArrayType(BeanPropertyWriter writer) {
         Class clazz = writer.getPropertyType();
         return clazz.isArray() || clazz.equals(List.class) || clazz.equals(Set.class);
+    }
+
+    protected boolean isStringType(BeanPropertyWriter writer) {
+        Class clazz = writer.getPropertyType();
+        return clazz.equals(String.class);
     }
 }
 
